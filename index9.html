@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/jx.css">
+
+</head>
+<div class="main">
+
+    <body>
+        <div class="header">
+            <a href="#">
+                <img src="images/重庆2（顶部图片）.jpg">
+            </a>
+        </div>
+        <!--顶部图片 end-->
+
+        <!--黑色导航 start-->
+        <div class="black-nav">
+            <div class="wrap">
+                <ul>
+                    <li><a href="index1.html">重庆首页</a></li>
+                    <li><a href="index2.html">地理环境</a> </li>
+                    <li><a href="index3.html">美食特色</a></li>
+                    <li><a href="index4.html">重庆特产</a> </li>
+                    <li><a href="index5.html">地方美景</a> </li>
+                    <li><a href="index6.html">历史文化</a> </li>
+                    <li><a href="index7.html">重庆习俗</a> </li>
+                    <li><a href="index8.html">重庆话</a></li>
+                    <li><a href="index9.html">登录/注册</a> </li>
+                    <li><a href="index10.html">留言</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--头顶标题  开始-->
+        <div calss="content-header">
+            <h1 class="title">登录/注册</h1>
+            <hr class="line">
+        </div>
+        <video class="shipin3" src="images/视频3.mp4" style="width: 650px;" controls="controls"></video>
+        <form>
+            <h3 class="yhdl">用户登录</h3><br>
+            用户名<br>
+            <input type="text">
+            <br>
+            密码<br>
+            <input type="password">
+            <br>
+            <br>
+            <input class="k1" type="submit" value="登录">
+            <br><br>
+            <a class="a-9" href="#">忘记密码?</a>|<a class="a-9" href="">注册新账号</a>
+        </form>
+        <div class="box-9">
+            <p class="box-text">让我们一起探索山城重庆吧!</p>
+        </div>
+
+        <script>
+            // 获取登录表单元素
+            let userInput = document.querySelector('input[type="text"]');
+            let pwdInput = document.querySelector('input[type="password"]');
+            let loginBtn = document.querySelector('input[type="submit"]');
+
+            // 阻止表单默认提交刷新页面
+            loginBtn.onclick = function (e) {
+                e.preventDefault();
+                let username = userInput.value.trim();
+                let password = pwdInput.value.trim();
+
+                if (username === "") {
+                    alert("用户名不能为空");
+                    return;
+                }
+                if (password === "") {
+                    alert("密码不能为空");
+                    return;
+                }
+                alert("登录成功！用户名：" + username);
+            }
+        </script>
+
+    </body>
+</div>
+
+</html>
